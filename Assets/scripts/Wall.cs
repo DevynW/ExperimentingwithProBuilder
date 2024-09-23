@@ -6,6 +6,7 @@ public class Wall : MonoBehaviour
 {
     [SerializeField] float speed = 1.5f;
     // Start is called before the first frame update
+    [SerializeField] float colliderSize = 27f;
 
     //create an array of all my Collidicators
     Collidicator[] collidicators;
@@ -16,7 +17,7 @@ public class Wall : MonoBehaviour
 
         foreach (Collidicator c in collidicators)
         {
-            c.SetColliderSize(10f);
+            c.SetColliderSize(colliderSize);
             //c.willPassThrough = true;
            
             //this is a great place to make them invisible
