@@ -10,7 +10,7 @@ public class randomWallGeneration : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("MakeWall", time, rate);
+        //InvokeRepeating("MakeWall", time, rate);
     }
 
     // Update is called once per frame
