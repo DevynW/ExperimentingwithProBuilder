@@ -32,8 +32,11 @@ public class Wall : MonoBehaviour
     void Update()
     {
         gameObject.transform.Translate(speed * Time.deltaTime * Vector3.forward, Space.World);
-        //Destroy(gameObject, randomWallGeneration.time);
+        Destroy(gameObject, randomWallGeneration.time);
         CalculateScore();
+        //music based on game mode
+        //maybe model mode
+        //Dance mode
     }
 
     float CalculateScore()

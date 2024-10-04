@@ -16,8 +16,8 @@ public class Collidicator : MonoBehaviour
         Collider.transform.localScale = new Vector3(Collider.transform.localScale.x, Collider.transform.localScale.y, ColliderSize);
         Collider.transform.Translate(Vector3.forward * ColliderSize / translationFactor);
     }
-    /*
-    public bool willPassThrough
+    
+    /*public bool willPassThrough
     {
         set {
             if (value == true)
@@ -29,8 +29,8 @@ public class Collidicator : MonoBehaviour
                 Indicator.color = hit;
             }
         }
-    }
- */
+    }*/
+ 
     public bool IsHit()
     {
         return Collider.IsHit();

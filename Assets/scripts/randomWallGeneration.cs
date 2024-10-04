@@ -5,12 +5,12 @@ using UnityEngine;
 public class randomWallGeneration : MonoBehaviour
 {
     [SerializeField] GameObject[] wallPrefabs;
-    [SerializeField] public static float time = 10f;
-    [SerializeField] float rate = 1f;
+    [SerializeField] public static float time = 25f;
+    [SerializeField] float rate = 25f;
     // Start is called before the first frame update
     void Start()
     {
-        //InvokeRepeating("MakeWall", time, rate);
+        InvokeRepeating("MakeWall", time, rate);
     }
 
     // Update is called once per frame
