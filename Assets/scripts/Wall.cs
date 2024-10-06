@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using TMPro;
 
 public class Wall : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Wall : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] float colliderSize = 27f;
     [SerializeField] float score;
+    [SerializeField] TMP_Text txtScore;
 
 
     //create an array of all my Collidicators
@@ -49,6 +51,7 @@ public class Wall : MonoBehaviour
         }
 
         score = (float)numPass / (float)collidicators.Length;
+        txtScore.text = ((int)(score * 100f)).ToString() + "%";
         return score;
     }
 

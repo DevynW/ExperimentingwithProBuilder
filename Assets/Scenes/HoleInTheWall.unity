@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 153092449}
   - component: {fileID: 153092448}
   m_Layer: 0
-  m_Name: Floor (1)
+  m_Name: bigFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -964,7 +964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1070125330
 Transform:
   m_ObjectHideFlags: 0
@@ -1198,7 +1198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1176844543
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2677,6 +2677,7 @@ MonoBehaviour:
   speed: 1.5
   colliderSize: 27
   score: 0
+  txtScore: {fileID: 0}
 --- !u!1001 &1320909336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3806,7 +3807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1605106877
 Transform:
   m_ObjectHideFlags: 0
